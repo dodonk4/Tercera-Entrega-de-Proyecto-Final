@@ -1,0 +1,22 @@
+<div id="dieTitelContainer">
+    <div id="dieTitel"><h1> Carrito de <b id="derName">{{nombre}}</b> </h1></div>
+    <form action="/logout" method="GET">
+        <input type="submit" value="Desloguearse">
+    </form><br>
+</div>
+
+
+<div class="dieProdukte">Colchon <input type="number" value={{cantidad0}} max={{maximum0}} name="cantidad"></input><button>Eliminar</button></div><br>
+<div class="dieProdukte">Manta <input type="number" value={{cantidad1}} max={{maximum1}} name="cantidad"></input><button>Eliminar</button></div><br>
+<div class="dieProdukte">Computadora <input type="number" value={{cantidad2}} max={{maximum2}} name="cantidad"></input><button>Eliminar</button></div><br>
+<div class="dieProdukte">Auriculares <input type="number" value={{cantidad3}} max={{maximum3}} name="cantidad"></input><button>Eliminar</button></div><br>
+<div class="dieProdukte">Parlantes <input type="number" value={{cantidad4}} max={{maximum4}} name="cantidad"></input><button>Eliminar</button></div><br>
+<div class="dieProdukte">Chromecast <input type="number" value={{cantidad5}} max={{maximum5}} name="cantidad"></input><button>Eliminar</button></div><br>
+
+
+<div id="dieEinreichenTaste"><button>Confirmar pedido</button></div><br>
+<div id="dieWarenkorbsLöschenTaste"><button>Borrar carrito</button></div>
+<form id="dieWarenkorbsLöschenTaste" action="/carritoDone" method="POST">
+    <input type="button" value="Limpiar Carrito">
+    <input type="submit" value="Confirmar Pedido">
+</form>
